@@ -1,0 +1,61 @@
+.container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sloganContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.sloganWrapper {
+  width: 85%;
+  padding: 7.5% 6% 7%;
+  border: 2px var(--color-white) solid;
+  font-family: "Josefin Sans";
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 350px) {
+  .sloganWrapper {
+    width: 95%;
+  }
+}
+
+@media (max-width: 550px) {
+  .sloganWrapper {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 750px) {
+  .wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sloganContainer {
+    align-self: flex-start;
+    justify-content: flex-start;
+  }
+
+  .sloganWrapper {
+    max-width: 50%;
+    text-align: start;
+    font-size: 30px;
+    padding: 5% 2.5%;
+  }
+}
+
+@media (max-width: 960px) and (min-width: 750px) {
+  .sloganWrapper {
+    font-size: 1.3rem;
+  }
+}
