@@ -20,14 +20,24 @@
 
 .title {
   color: var(--color-black);
-  font-size: 4rem;
+  font-size: 3rem;
   margin: 0 0 0.75rem;
 }
 
 .text {
   color: var(--color-darkish-gray);
   font-family: "Alata";
-  font-size: 1.75rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 400px) {
+  .text {
+    font-size: 1.75rem;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
 }
 
 @media (min-width: 750px) {

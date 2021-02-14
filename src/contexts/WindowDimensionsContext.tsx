@@ -4,7 +4,7 @@ import React from "react";
 interface WindowDimensionsState {
   width: number;
   height: number;
-  device: "mobile" | "desktop";
+  device: Devices;
 }
 
 export const WindowDimensionsContext = React.createContext({

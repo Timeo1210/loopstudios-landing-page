@@ -9,6 +9,7 @@ const Header = dynamic(() => import("@/components/home/Header/Header"), {
   ssr: false,
 });
 import Introduction from "@/components/home/Introduction/Introduction";
+import Creations from "@/components/home/Creations/Creations";
 
 function Home() {
   const { device } = useContext(WindowDimensionsContext);
@@ -25,7 +26,7 @@ function Home() {
       <HandleLargeDisplay>
         <Header backgroundImageRef={backgroundImageRef} />
         <Introduction />
-        {/* <p>HELLO</p> */}
+        <Creations />
       </HandleLargeDisplay>
     </div>
   );
