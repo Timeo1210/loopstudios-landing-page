@@ -4,6 +4,8 @@ import styles from "@/styles/home/Header/TopBar/TopBar.module.css";
 
 import { WindowDimensionsContext } from "src/contexts/WindowDimensionsContext";
 
+import NavMenu from "@/components/NavMenu";
+
 const TopBar: React.FC<{}> = () => {
   const [displayScrollingMenu, setDisplayScrollingMenu] = useState(false);
 
@@ -14,16 +16,6 @@ const TopBar: React.FC<{}> = () => {
       setDisplayScrollingMenu(false);
     }
   }, [device]);
-
-  const listLinks = (
-    <>
-      <li>About</li>
-      <li>Careers</li>
-      <li>Events</li>
-      <li>Products</li>
-      <li>Support</li>
-    </>
-  );
 
   return (
     <>
@@ -41,14 +33,12 @@ const TopBar: React.FC<{}> = () => {
               )}
             </button>
           ) : (
-            <ul className={styles.navbar}>{listLinks}</ul>
+            <NavMenu ulClassName={styles.navbar} />
           )}
         </div>
       </div>
       {displayScrollingMenu ? (
-        <nav className={styles.scrollingMenu}>
-          <ul>{listLinks}</ul>
-        </nav>
+        <NavMenu navClassName={styles.scrollingMenu} />
       ) : null}
     </>
   );
