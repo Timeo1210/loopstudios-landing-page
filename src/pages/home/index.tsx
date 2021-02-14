@@ -10,6 +10,7 @@ const Header = dynamic(() => import("@/components/home/Header/Header"), {
 });
 import Introduction from "@/components/home/Introduction/Introduction";
 import Creations from "@/components/home/Creations/Creations";
+import Footer from "@/components/home/Footer/Footer";
 
 function Home() {
   const { device } = useContext(WindowDimensionsContext);
@@ -28,6 +29,7 @@ function Home() {
         <Introduction />
         <Creations />
       </HandleLargeDisplay>
+      <Footer />
     </div>
   );
 }
