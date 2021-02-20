@@ -1,0 +1,18 @@
+.button {
+  color: var(--color-black);
+  font-size: 1rem;
+  font-family: "Alata";
+  letter-spacing: 5px;
+  padding: 0.66rem 2.66rem;
+  background-color: transparent;
+  border: 2px var(--color-darkish-gray) solid;
+  border-radius: 3%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border-color: var(--color-black);
+}
