@@ -1,5 +1,7 @@
 import React from "react";
 
+import styles from "@/styles/NavMenu.module.css";
+
 interface NavMenuProps {
   navClassName?: string;
   ulClassName?: string;
@@ -8,7 +10,7 @@ interface NavMenuProps {
 const NavMenu: React.FC<NavMenuProps> = ({ navClassName, ulClassName }) => {
   return (
     <nav className={navClassName}>
-      <ul className={ulClassName}>
+      <ul className={[styles.list, ulClassName].join(" ")}>
         <li>About</li>
         <li>Careers</li>
         <li>Events</li>
