@@ -1,5 +1,6 @@
 .list li {
   position: relative;
+  cursor: pointer;
 }
 
 .list li::after {
@@ -13,7 +14,7 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-  /* transition: width 0.3s ease 0s, left 0.3s ease 0s; */
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
 
 .list li:hover::after {

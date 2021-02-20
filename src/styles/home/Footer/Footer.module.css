@@ -37,7 +37,29 @@
   justify-content: center;
   align-items: center;
 }
-.iconWrapper img:first-child ~ img {
+.iconWrapper a {
+  cursor: pointer;
+  position: relative;
+  display: block;
+}
+.iconWrapper a::after {
+  content: "";
+  background: var(--color-white);
+  height: 2px;
+  width: 0;
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+.iconWrapper a:hover::after {
+  width: 60%;
+}
+
+.iconWrapper a:first-child ~ a {
   margin-left: 1rem;
 }
 

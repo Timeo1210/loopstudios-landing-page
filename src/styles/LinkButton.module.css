@@ -8,6 +8,7 @@
   border: 2px var(--color-darkish-gray) solid;
   border-radius: 3%;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .button:hover {

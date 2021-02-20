@@ -20,11 +20,13 @@ const Card: React.FC<CardProps> = ({ imgURL, text }) => {
 
   return (
     <div className={styles.container}>
-      <img
-        style={{ width: "100%" }}
-        src={`/images/${device}/${imgURL}`}
-        alt={alt}
-      />
+      <div className={styles.imgWrapper}>
+        <img
+          style={{ width: "100%" }}
+          src={`/images/${device}/${imgURL}`}
+          alt={alt}
+        />
+      </div>
       <a className={styles.wrapper}>
         <h3>{text}</h3>
       </a>

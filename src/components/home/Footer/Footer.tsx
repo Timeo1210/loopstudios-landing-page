@@ -11,15 +11,23 @@ const Footer: React.FC<{}> = ({}) => {
       <HandleLargeDisplay>
         <div className={styles.wrapper}>
           <div className={styles.navWrapper}>
-            <h2>LOOPSTUDIOS</h2>
+            <h2 style={{ cursor: "pointer" }}>LOOPSTUDIOS</h2>
             <NavMenu ulClassName={styles.navMenuList} />
           </div>
           <div>
             <div className={styles.iconWrapper}>
-              <img src="/images/icon-facebook.svg" alt="facebook" />
-              <img src="/images/icon-twitter.svg" alt="twitter" />
-              <img src="/images/icon-pinterest.svg" alt="pinterest" />
-              <img src="/images/icon-instagram.svg" alt="instagram" />
+              <a>
+                <img src="/images/icon-facebook.svg" alt="facebook" />
+              </a>
+              <a>
+                <img src="/images/icon-twitter.svg" alt="twitter" />
+              </a>
+              <a>
+                <img src="/images/icon-pinterest.svg" alt="pinterest" />
+              </a>
+              <a>
+                <img src="/images/icon-instagram.svg" alt="instagram" />
+              </a>
             </div>
             <span className={styles.certificate}>
               © 2021 Loopstudios. All rights reserved.

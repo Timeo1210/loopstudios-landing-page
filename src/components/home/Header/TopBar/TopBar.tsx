@@ -20,7 +20,7 @@ const TopBar: React.FC<{}> = () => {
   return (
     <>
       <div className={styles.container}>
-        <h1>loopstudios</h1>
+        <a style={{cursor: "pointer"}}><h1 >loopstudios</h1></a>
         <div className={styles.menu}>
           {device === "mobile" ? (
             <button
